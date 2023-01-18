@@ -22,19 +22,15 @@ session.commit()
 
 # ========CREATE QUESTIONS============
 
-
-
-
-
 for cat in category_resp.json():
+
     category_questions = requests.get(f"https://jservice.io/api/clues?category={cat['id']}")
     
     for question in category_questions.json():
         session.add(Question(question=question["question"], answer=question["answer"], value=question["value"], category=question["category"]["title"]))
         session.commit()
         
-
-import ipdb; ipdb.set_trace()
+        import ipdb; ipdb.set_trace()
         
 
         
