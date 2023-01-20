@@ -38,4 +38,4 @@ class Question(Base):
     
     
     def __repr__(self):
-        return f"<Question id={self.id}, question={self.question}, answer={self.answer}, category={self.category}, value={self.value} >"
+        return f"<Question id={self.id}, clue={self.clue}, response={self.response}, category={self.category}, value={self.value} >"
