@@ -1,5 +1,5 @@
-from models import User, Question
 import requests
+from models import User, Question
 from ipdb import set_trace
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
@@ -39,13 +39,11 @@ for clue in clues_resp.json()["data"]:
     session.add(new_clue)
     session.commit()
     
-    # nc = Question()
-    # id = Column(Integer(), primary_key=True)
-    # clue = Column(String(), nullable=False, unique=True)
-    # response = Column(String(), nullable=False)
-    # category = Column(String(), nullable=False)
-    # value = Column(Integer(), nullable=False)
-    # cb_game_id = Column(Integer(), nullable=False)
-    # daily_double = Column(Boolean(), default=False)
-    # game_round = Column(String(), nullable=False)
+# Associate 10 questions to each user
+for n in range(10):
+    q = session.query(Question).get(n)
+    tom.questions.append(q)
+    session.add(tom)
+    session.commit()
+    
 set_trace()
