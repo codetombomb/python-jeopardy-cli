@@ -1,5 +1,7 @@
 # Libraries 
-https://pypi.org/project/simple-term-menu/
+Menu libs:
+- https://pypi.org/project/simple-term-menu/
+- https://pypi.org/project/console-menu/
 
 # Todo
 - Create a CLI class to start game
