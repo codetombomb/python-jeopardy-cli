@@ -9,6 +9,7 @@ alembic = "*"
 ipdb = "*"
 faker = "*"
 requests = "*"
+rich = "*"
 
 [dev-packages]
 autopep8 = "*"

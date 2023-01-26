@@ -8,7 +8,6 @@ from rich import box
 
 class GameBoard:
     # Init with 30 question object list and an optional column config obj
-    #
     def __init__(
         self,
         board_data,
