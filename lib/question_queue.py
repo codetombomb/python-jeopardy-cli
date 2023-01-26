@@ -1,4 +1,4 @@
-class Queue:
+class QuestionQueue:
     def __init__(self):
         self.items = []
 
